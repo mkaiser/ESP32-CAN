@@ -11,31 +11,42 @@ So, if there is enough interest, I would think about ordering more than 5 and pu
 # Features
 - ESP C3 Wroom 2-N4 
   - ESP Home support
-  - hardware also supports the upcoming Matter protocol (over WIFI)
-- USB Type C for programming (CH340C for USB to UART)
-- Power Supply:
+  - Hardware supports the upcoming Matter protocol (over WIFI)
+- 2x USB Type C 
+  - Direct ESP programming (have never tested this before)
+  - Programming via CH340C (USB to UART)
+  - Each USB port can power the board (5V, 1A)
+- Power Supply
   - Wide range 5..30V switched input via Mornsun K78L03-500R3 (omitting the standard 3V3 LDO, so it should be very energy-efficient!)
-  - Short and Reverse input protection
-  - resettable input fuse
-  - made sure that every component has decoupling capacitors (I was terrified, seeing that most evaluation kits don't have them)
-- CAN Bus: 
+  - Short and reverse input protection
+  - USB ports and 24V input can be used in parallel without causing backpower problems
+  - Resettable input fuse
+  - Made sure that every component has proper decoupling capacitors (I was terrified, seeing that most evaluation kits don't have them)
+- CAN Bus
   - Input (CAN high/Low, VCC, GND) via screw terminal 
-  - 3V3 CAN transceiver TI SN65HVD230, compatible with 5V CAN Bus systems [very technical link](https://www.analog.com/en/technical-articles/can-bus-transceivers-operate-from-33v-or-5v-and-withstand-60v-faults.html) 
-  - well known and supported MCP2515 CAN Controller (integrated in ESP Home)
-  - options to bypass the CAN controller via 0Ohm resistors 
+  - 3V3 CAN transceiver TI SN65HVD230, compatible with 3V3 and 5V CAN Bus systems [very technical link](https://www.analog.com/en/technical-articles/can-bus-transceivers-operate-from-33v-or-5v-and-withstand-60v-faults.html) 
+  - Well known and supported MCP2515 CAN Controller (integrated in ESP Home)
+  - Options to bypass the CAN controller via 0Ohm resistors 
 - 4 LEDs (Power, RX, TX and ESP LED)
-- Optional: There are additional spring clamps and one 10p 2mm pin header on the board - I need them for other projects :)
+- Additional / Optional
+  - There are additional spring clamps and one 10p 2mm pin header on the board - I need them for other projects :)
+  – I added one I2C-attached IC (GP8403-TC50) to realise 2 analog output ports with 0…10V DC output. In combination with a potential free relay, I can control my ventilation system (Tecalor TVZ 170 E Plus).
 
 
 
 # Current status
-- [Schematics almost ready](2023-03-17_Schematic_ESP32-CAN_draft.pdf). Will review at them again, soon 
-- Basic placement is done. Routing not started, but it will fit on a one-side PCB smaller than 60x60mm. 
-![2D Layout](images/2D_layout.jpg)
-![3D Layout](images/3D_layout.jpg)
+- [Schematics finished (pdf link)](2023-04-20_JLCPCB/SCH_ESP_CAN_2023-04-20.pdf). Will update the schematics, if I find any errors after manifacturing. 
 
+<img src="Images/SCH_ESP_CAN_0-main_2023-04-20.png" width="600">
 
-- Looking for suitable housings to determine the PCB dimensions. I have a sample of a Phoenix Contact UCS 145-125, which is really robust, but with around 25€ it costs would be more than the PCB...  Any ideas? It is also possible to do a cheap 3D printed housing includind a strain relief for the CAN-input-wires, but I don't have a 3D printer and certainly would need help with that. 
+- [Layout finished (2D pdf link)](2023-04-20_JLCPCB/PCB_PCB6_2023-04-20.pdf). 
+
+Designed the PCB to fit a cheap and robust "SONOFF IP66 waterproof Junction Box” from Aliexpress. Measuring the housing was a bit tricky. I hope it works. 
+
+<img src="Images/Sonoff_IP66_Waterproof_Junction_Box_Case.jpg" width="600">
+
+<img src="Images/2023-04-20_2D_layout_JLCPCB.jpg" width="600">
+<img src="Images/2023-04-20_3D_layout_JLCPCB.jpg" width="600">
 
 
 Waiting for your feedback :)
