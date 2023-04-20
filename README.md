@@ -34,6 +34,7 @@ So, if there is enough interest, I would think about ordering more than 5 and pu
 
 
 
+
 # Current status
 - [Schematics finished (pdf link)](2023-04-20_JLCPCB/SCH_ESP_CAN_2023-04-20.pdf). Will update the schematics, if I find any errors after manifacturing. 
 
@@ -44,6 +45,9 @@ So, if there is enough interest, I would think about ordering more than 5 and pu
 Designed the PCB to fit a cheap and robust "SONOFF IP66 waterproof Junction Box” from Aliexpress. Measuring the housing was a bit tricky. I hope it works. 
 
 <img src="Images/Sonoff_IP66_Waterproof_Junction_Box_Case.jpg" width="600">
+
+WTF can't I properly scale this image!?
+![Drawing|width=500](Images/Sonoff_IP66_Waterproof_Junction_Box_Case.drawio.svg)
 
 <img src="Images/2023-04-20_2D_layout_JLCPCB.jpg" width="600">
 <img src="Images/2023-04-20_3D_layout_JLCPCB.jpg" width="600">
