@@ -57,6 +57,11 @@ I am planing to make a new revision in a couple of month. Give me some feedback 
     * Switched label for USB UART (via CH340) and USB PROG (via ESP32 CDC)
     * Two Mounting holes are a bit off and the PCB could be 1mm more narrow to better fit the SONOFF case. --> two screw also work, but will fix in the next revision
 
+# Documentation 
+* [Schematic with errata](rev1_2023-05/2023-07-14._Schematic_rev0_errata_.pdf)
+* [PCB Overview and Jumper Settings](PCB_Overview_and_Jumper_Settings)
+* [ESPHome CANopen Testcode](https://github.com/mkaiser/esphome-canopen/tree/simple)
+
 # Some pictures
 Ventilation controller based on the PCB 
 <img src="Images/Ventilation_Controller.png" width="600">
