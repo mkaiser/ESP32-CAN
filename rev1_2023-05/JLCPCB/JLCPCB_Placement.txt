@@ -1,0 +1,13 @@
+Unselect:
+
+U6 (ESP)
+K1 (Relay)
+CN2 (Spring clamps)
+U5, U9 (Header 2.43)
+H3 (Header 2mm)
+
+H1,H2, Dip switches
+
+
+
+rename to RPI_DIN_GW_bottom_relay_input_2023-05-23
