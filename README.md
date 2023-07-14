@@ -56,6 +56,7 @@ I am planing to make a new revision in a couple of month. Give me some feedback 
   * PCB Layout 
     * Switched label for USB UART (via CH340) and USB PROG (via ESP32 CDC)
     * Two Mounting holes are a bit off and the PCB could be 1mm more narrow to better fit the SONOFF case. --> two screw also work, but will fix in the next revision
+    * MYS Pin Header is placed over some resistors (still works, but also not nice)
 
 # Documentation 
 * [Schematic with errata](rev1_2023-05/2023-07-14._Schematic_rev0_errata_.pdf)
