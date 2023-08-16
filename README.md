@@ -1,4 +1,5 @@
-![Static Badge](https://img.shields.io/badge/Discord-Channel-green)
+[![Discord Chat](https://img.shields.io/discord/1141428195602726993.svg)](https://discord.gg/MkSF8qCn9Q)
+
 
 # Overview
 I started to create a PCB to control my heatpump via CAN-bus, based on this [ESPHome project](https://github.com/roberreiter/StiebelEltron-heatpump-over-esphome-can-bus):
